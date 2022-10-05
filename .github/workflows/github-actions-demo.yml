@@ -4,7 +4,9 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - run: ip addr
       - run: curl ip.me
+      - run: curl https://ehallapp.zwu.edu.cn:8080/app/login
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
